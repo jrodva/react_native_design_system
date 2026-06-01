@@ -11,6 +11,8 @@ export const itemCardStyles = StyleSheet.create({
     borderRadius: radius.lg,
     padding: spacing.md,
     gap: spacing.sm,
+    width: 390,
+    maxWidth: 450,
     ...shadows.md,
   },
   accentBorder: {
@@ -46,6 +48,7 @@ export const itemCardStyles = StyleSheet.create({
     color: colors.semantic.text.primary,
   },
   subtitle: {
+    flex: 1,
     fontSize: typography.fontSizes.sm,
     color: colors.semantic.text.secondary,
   },
