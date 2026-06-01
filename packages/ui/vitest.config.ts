@@ -8,5 +8,8 @@ export default defineConfig({
     alias: {
       'react-native': 'react-native-web',
     },
+    typecheck: {
+      tsconfig: './tsconfig.test.json',
+    },
   },
 })
