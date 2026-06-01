@@ -54,8 +54,7 @@ describe('ItemCard', () => {
 
   it('calls onPress when pressed', async () => {
     const onPress = vi.fn()
-    const { container } = render(<ItemCard {...baseProps} onPress={onPress} />)
-    const button = container.querySelector('[role="button"]')
-    expect(button).not.toBeNull()
+    render(<ItemCard {...baseProps} onPress={onPress} />)
+    expect(screen.getByRole('button')).toBeInTheDocument()
   })
 })
